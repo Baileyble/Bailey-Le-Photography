@@ -179,6 +179,7 @@ left: auto;
     .mainPageHeader {
         margin-top: 40px;
         padding-left: 40px;
+        text-align: right;
     }
 
     .margin-80 {
@@ -188,4 +189,42 @@ left: auto;
 
     .mainPageHeaderInner {
         float: left;
+    }
+
+    @media (max-width: 1200px) {
+        .mainPageHeader {
+            padding-left: 15px;
+        }
+    }
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 90px;
+    }
+}
+
+    @media (max-width: 767px) {
+        .mainPageHeader {
+            float: left;
+            text-align: left;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 112px;
+        }
+        .backBtn {
+            width: 100%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .backBtn h3 {
+            font-size: 42px;
+        }
+
+        .pageHeader h1 {
+            font-size: 100px;
+        }
+
     }
